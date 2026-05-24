@@ -3,3 +3,4 @@ xformers
 torch==2.11.0
 torchvision
 torchaudio
+torchcodec

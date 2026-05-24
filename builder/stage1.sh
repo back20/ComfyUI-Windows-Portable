@@ -22,10 +22,6 @@ $pip_exe install --upgrade pip wheel setuptools
 
 $pip_exe install -r "$workdir"/pak1.txt
 $pip_exe install -r "$workdir"/pak2.txt
-
-# Temp-fix for TorchCodec on Windows
-$pip_exe install torchcodec
-
 $pip_exe install -r "$workdir"/pak3.txt
 $pip_exe install -r "$workdir"/pak4.txt
 
