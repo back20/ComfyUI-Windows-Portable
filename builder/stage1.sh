@@ -12,7 +12,7 @@ ls -lahF
 
 # Download Python Standalone
 curl -sSL \
-https://github.com/astral-sh/python-build-standalone/releases/download/20260510/cpython-3.13.13+20260510-x86_64-pc-windows-msvc-install_only.tar.gz \
+https://github.com/astral-sh/python-build-standalone/releases/download/20260623/cpython-3.14.6+20260623-x86_64-pc-windows-msvc-install_only.tar.gz \
     -o python.tar.gz
 tar -zxf python.tar.gz
 mv python python_standalone
@@ -34,11 +34,6 @@ $pip_exe install --index-url https://aiinfra.pkgs.visualstudio.com/PublicPackage
 $pip_exe install -r "$workdir"/pak5.txt
 $pip_exe install -r "$workdir"/pak6.txt
 $pip_exe install -r "$workdir"/pak7.txt
-
-# Temp-fix for compel
-# compel is used by smZNodes
-$pip_exe install notebook pyparsing
-$pip_exe install --no-deps compel
 
 # Temp-fix: Prevent SAM-3 from installing its older dependencies
 $pip_exe install --no-deps 'git+https://github.com/facebookresearch/sam3.git'
@@ -71,7 +66,7 @@ mv "$workdir"/aria2/*/aria2c.exe  "$workdir"/python_standalone/Scripts/
 rm aria2.zip
 
 # Add FFmpeg binary
-curl -sSL https://github.com/GyanD/codexffmpeg/releases/download/8.1.1/ffmpeg-8.1.1-full_build.zip \
+curl -sSL https://github.com/GyanD/codexffmpeg/releases/download/8.1.2/ffmpeg-8.1.2-full_build.zip \
     -o ffmpeg.zip
 unzip -q ffmpeg.zip -d "$workdir"/ffmpeg
 mv "$workdir"/ffmpeg/*/bin/ffmpeg.exe  "$workdir"/python_standalone/Scripts/

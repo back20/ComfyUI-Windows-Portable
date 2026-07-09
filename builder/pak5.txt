@@ -18,6 +18,7 @@ GitPython
 glfw
 imageio-ffmpeg
 importlib-metadata
+lark
 matrix-nio
 mss
 numba

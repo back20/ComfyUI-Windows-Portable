@@ -168,7 +168,6 @@ comfyui:
     clip_vision: clip_vision
     configs: configs
     controlnet: controlnet
-    depthfm: depthfm
     diffusers: diffusers
     diffusion_models: |
         diffusion_models
