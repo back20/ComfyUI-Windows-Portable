@@ -8,7 +8,6 @@ decord
 facexlib
 fvcore
 gguf
-gpytoolbox
 hydra-core
 iopath
 jinja2

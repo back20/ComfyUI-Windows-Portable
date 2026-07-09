@@ -3,7 +3,6 @@ set -eu
 
 cat > pak7.txt << EOF
 fvcore
-gpytoolbox
 EOF
 
 array=(
