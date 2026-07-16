@@ -19,7 +19,7 @@ https://github.com/ltdrdata/ComfyUI-Impact-Pack[Impact Pack]
 会在初次启动时下载的模型文件等，避免启动时卡下载（访问 GitHub/HuggingFace 不畅）。
 
 * 包含 300+ 互相兼容的 Python 包，包括：
-** 性能库： SageAttention、FlashAttention、xFormers、Nunchaku 等
+** 性能库： SageAttention、xFormers 等
 ** 需要编译安装的 `insightface`、`dlib` 等
 
 * 仅预置了少量功能性模型，绘图模型还请用户自行下载
@@ -71,9 +71,9 @@ image::docs/screenshot-launcher.zh.webp["启动器截图"]
 [cols=3]
 |===
 3+|**性能**
-|link:https://github.com/nunchaku-ai/ComfyUI-nunchaku[Nunchaku]
 |link:https://github.com/city96/ComfyUI-GGUF[GGUF]
 |link:https://github.com/woct0rdho/ComfyUI-RadialAttn[RadialAttention]
+|
 3+|**工作空间**
 |link:https://github.com/ltdrdata/ComfyUI-Manager[ComfyUI Manager]
 |link:https://github.com/chrisgoringe/cg-use-everywhere[Use Everywhere]
@@ -94,8 +94,8 @@ image::docs/screenshot-launcher.zh.webp["启动器截图"]
 |link:https://github.com/bash-j/mikey_nodes[Mikey Nodes]
 |link:https://github.com/mirabarukaso/ComfyUI_Mira[Mira Nodes]
 |link:https://github.com/rgthree/rgthree-comfy[rgthree Nodes]
-|link:https://github.com/shiimizu/ComfyUI_smZNodes[smZ(shiimizu) Nodes]
 |link:https://github.com/yolain/ComfyUI-Easy-Use[ComfyUI-Easy-Use]
+|
 |
 3+|**控制**
 |link:https://github.com/Fannovel16/comfyui_controlnet_aux[ControlNet Auxiliary Preprocessors]
