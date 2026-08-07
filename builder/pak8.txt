@@ -3,10 +3,10 @@
 triton-windows<3.8
 
 # SageAttention
-https://github.com/woct0rdho/SageAttention/releases/download/v2.2.0-windows.post5/sageattention-2.2.0+cu130torch2.10.0andhigher.post5-cp310-abi3-win_amd64.whl
+https://github.com/woct0rdho/SageAttention/releases/download/v2.2.0-windows.post6/sageattention-2.2.0+cu130torch2.10.0andhigher.post6-cp310-abi3-win_amd64.whl
 
 # SpargeAttention
 https://github.com/woct0rdho/SpargeAttn/releases/download/v0.1.0-windows.post4/spas_sage_attn-0.1.0+cu130torch2.9.0andhigher.post4-cp39-abi3-win_amd64.whl
 
 # llama-cpp-python
-https://github.com/JamePeng/llama-cpp-python/releases/download/v0.3.41-cu130-win-20260707/llama_cpp_python-0.3.41+cu130-cp314-cp314-win_amd64.whl
+https://github.com/JamePeng/llama-cpp-python/releases/download/v0.3.45-cu130-win-20260731/llama_cpp_python-0.3.45+cu130-cp314-cp314-win_amd64.whl
