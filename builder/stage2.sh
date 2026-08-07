@@ -38,9 +38,20 @@ git reset --hard "$(git tag | grep -e '^v' | sort -V | tail -1)"
 rm -vrf models
 mkdir models
 
-# Custom Nodes
+################################################################################
+# ComfyUI-Manager
 cd "$workdir"/ComfyUI_Windows_portable/ComfyUI/custom_nodes
 $gcs https://github.com/Comfy-Org/ComfyUI-Manager.git
+
+# Disable ComfyUI-Manager's cache update on startup ("FETCH ComfyRegistry Data")
+cd "$workdir"/ComfyUI_Windows_portable/ComfyUI/custom_nodes/ComfyUI-Manager/glob
+echo "Deleting the line in $(pwd)/manager_server.py:"
+grep -n "run(default_cache_update())" ./manager_server.py
+sed -i '/run(default_cache_update())/d' ./manager_server.py
+
+################################################################################
+# Custom Nodes
+cd "$workdir"/ComfyUI_Windows_portable/ComfyUI/custom_nodes
 
 # Performance
 $gcs https://github.com/city96/ComfyUI-GGUF.git
