@@ -112,7 +112,7 @@ cp -rf "$workdir"/attachments/. \
 du -hd2 "$workdir"/ComfyUI_Windows_portable
 
 ################################################################################
-# TAESD model for image on-the-fly preview
+# TAESD models for image on-the-fly preview
 cd "$workdir"
 $gcs https://github.com/madebyollin/taesd.git
 mkdir -p "$workdir"/ComfyUI_Windows_portable/ComfyUI/models/vae_approx
@@ -120,6 +120,15 @@ cp taesd/*.pth \
     "$workdir"/ComfyUI_Windows_portable/ComfyUI/models/vae_approx/
 rm -rf taesd
 
+# Enable TAESD preview by default
+mkdir -p "$workdir"/ComfyUI_Windows_portable/ComfyUI/user/default
+cat <<EOF > "$workdir"/ComfyUI_Windows_portable/ComfyUI/user/default/comfy.settings.json
+{
+    "Comfy.Execution.PreviewMethod": "taesd"
+}
+EOF
+
+################################################################################
 # Download models for Impact-Pack & Impact-Subpack
 cd "$workdir"/ComfyUI_Windows_portable/ComfyUI/custom_nodes/ComfyUI-Impact-Pack
 "$workdir"/ComfyUI_Windows_portable/python_standalone/python.exe -s -B install.py
